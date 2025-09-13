@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learning Path | From Logic to Django</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .code-block {
+            font-family: 'Courier New', monospace;
+            background-color: #2d3748;
+            color: #f7fafc;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            overflow-x: auto;
+        }
+        .lesson-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <i data-feather="code" class="h-8 w-8 text-purple-600 mr-2"></i>
+                            <span class="font-semibold text-gray-900 text-lg">PyPath</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#path" class="py-4 px-2 text-purple-600 border-b-4 border-purple-600 font-semibold">Learning Path</a>
+                        <a href="#features" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">Features</a>
+                        <a href="#resources" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">Resources</a>
+                        <a href="#contact" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#" class="py-2 px-4 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition duration-300">Get Started</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6 text-gray-500"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-down">Master Python Programming</h1>
+            <h2 class="text-xl md:text-2xl mb-8" data-aos="fade-down" data-aos-delay="100">From basic logic to building web apps with Django</h2>
+            <div class="flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="#path" class="bg-white text-purple-800 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition duration-300">Explore Path</a>
+                <a href="#" class="border-2 border-white text-white font-bold py-3 px-6 rounded-full hover:bg-white hover:text-purple-800 transition duration-300">Start Learning</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section id="path" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Your Python Learning Journey</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Beginner Level -->
+                <div class="lesson-card bg-gray-50 rounded-xl p-6 shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <i data-feather="cpu" class="text-green-600"></i>
+                        </div>
+                        <h3 class="ml-3 text-xl font-semibold">Programming Fundamentals</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> Logic & Problem Solving</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> Variables & Data Types</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> Control Structures</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> Functions & Modularity</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> Basic Algorithms</li>
+                    </ul>
+                    <div class="mt-6">
+                        <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Beginner</span>
+                    </div>
+                </div>
+
+                <!-- Intermediate Level -->
+                <div class="lesson-card bg-gray-50 rounded-xl p-6 shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <i data-feather="layers" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="ml-3 text-xl font-semibold">Core Python</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center"><i data-feather="check" class="text-blue-500 mr-2"></i> Object-Oriented Programming</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-blue-500 mr-2"></i> File Handling</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-blue-500 mr-2"></i> Error Handling</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-blue-500 mr-2"></i> Modules & Packages</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-blue-500 mr-2"></i> Working with APIs</li>
+                    </ul>
+                    <div class="mt-6">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Intermediate</span>
+                    </div>
+                </div>
+
+                <!-- Advanced Level -->
+                <div class="lesson-card bg-gray-50 rounded-xl p-6 shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full">
+                            <i data-feather="globe" class="text-purple-600"></i>
+                        </div>
+                        <h3 class="ml-3 text-xl font-semibold">Web Development</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center"><i data-feather="check" class="text-purple-500 mr-2"></i> Django Fundamentals</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-purple-500 mr-2"></i> Models & Databases</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-purple-500 mr-2"></i> Views & Templates</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-purple-500 mr-2"></i> Forms & Authentication</li>
+                        <li class="flex items-center"><i data-feather="check" class="text-purple-500 mr-2"></i> Deployment</li>
+                    </ul>
+                    <div class="mt-6">
+                        <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Why Learn With Us</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-purple-600 mb-4">
+                        <i data-feather="book-open" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Structured Curriculum</h3>
+                    <p class="text-gray-600">Our carefully designed learning path takes you from absolute beginner to professional developer with clear milestones.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-purple-600 mb-4">
+                        <i data-feather="monitor" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Interactive Coding</h3>
+                    <p class="text-gray-600">Practice directly in your browser with our built-in coding environment and instant feedback.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-purple-600 mb-4">
+                        <i data-feather="award" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Real Projects</h3>
+                    <p class="text-gray-600">Build portfolio-worthy projects at each level to demonstrate your skills to potential employers.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-purple-600 mb-4">
+                        <i data-feather="users" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Community Support</h3>
+                    <p class="text-gray-600">Join our active community of learners and get help when you're stuck or want to collaborate.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-purple-600 mb-4">
+                        <i data-feather="clock" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Self-Paced Learning</h3>
+                    <p class="text-gray-600">Learn at your own pace with lifetime access to all materials and updates.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-purple-600 mb-4">
+                        <i data-feather="briefcase" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Career Guidance</h3>
+                    <p class="text-gray-600">Get career advice, resume tips, and interview preparation to land your dream job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Example -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-6">Learn By Doing</h2>
+                    <p class="text-gray-600 mb-6">Our hands-on approach means you'll be writing real Python code from day one. Here's a simple example of what you'll learn in the first week:</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center"><i data-feather="check-circle" class="text-green-500 mr-2"></i> Understand basic syntax and structure</li>
+                        <li class="flex items-center"><i data-feather="check-circle" class="text-green-500 mr-2"></i> Work with variables and data types</li>
+                        <li class="flex items-center"><i data-feather="check-circle" class="text-green-500 mr-2"></i> Write your first functions</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="code-block">
+                        <pre><code class="text-sm">
+# Simple Python calculator
+def calculator():
+    print("Welcome to Python Calculator!")
+    
+    num1 = float(input("Enter first number: "))
+    operation = input("Enter operation (+, -, *, /): ")
+    num2 = float(input("Enter second number: "))
+    
+    if operation == "+":
+        print(f"Result: {num1 + num2}")
+    elif operation == "-":
+        print(f"Result: {num1 - num2}")
+    elif operation == "*":
+        print(f"Result: {num1 * num2}")
+    elif operation == "/":
+        if num2 != 0:
+            print(f"Result: {num1 / num2}")
+        else:
+            print("Error: Division by zero!")
+    else:
+        print("Invalid operation")
+
+calculator()
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Additional Resources</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/technology/640x360/1" alt="Cheat Sheets" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Python Cheat Sheets</h3>
+                        <p class="text-gray-600 mb-4">Quick reference guides for Python syntax, data structures, and common operations.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:underline">Download Now</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/workspace/640x360/2" alt="Project Ideas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Project Ideas</h3>
+                        <p class="text-gray-600 mb-4">Collection of project ideas for each skill level to practice and build your portfolio.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:underline">Explore Projects</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/education/640x360/3" alt="Recommended Books" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Recommended Books</h3>
+                        <p class="text-gray-600 mb-4">Curated list of the best Python and Django books for deep learning.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:underline">View List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-down">Ready to Start Your Python Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-down" data-aos-delay="100">Join thousands of students who've transformed their careers with our comprehensive Python curriculum.</p>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <a href="#" class="inline-block bg-white text-purple-800 font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition duration-300">Enroll Now - It's Free!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">PyPath</h3>
+                    <p class="text-gray-400">Your complete guide to mastering Python programming from basics to web development.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#path" class="text-gray-400 hover:text-white transition duration-300">Learning Path</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition duration-300">Features</a></li>
+                        <li><a href="#resources" class="text-gray-400 hover:text-white transition duration-300">Resources</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i data-feather="mail" class="mr-2 w-4 h-4"></i> <a href="mailto:hello@pypath.com" class="text-gray-400 hover:text-white transition duration-300">hello@pypath.com</a></li>
+                        <li class="flex items-center"><i data-feather="twitter" class="mr-2 w-4 h-4"></i> <a href="#" class="text-gray-400 hover:text-white transition duration-300">@pypath</a></li>
+                        <li class="flex items-center"><i data-feather="github" class="mr-2 w-4 h-4"></i> <a href="#" class="text-gray-400 hover:text-white transition duration-300">github.com/pypath</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get updates on new courses and resources.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-r-lg transition duration-300">
+                            <i data-feather="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 PyPath. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
